@@ -1,7 +1,5 @@
 package easy;
 
-import java.util.Arrays;
-
 public class LongestPrefix {
     /**
      * Write a function to find the longest common prefix string amongst an array of strings.
