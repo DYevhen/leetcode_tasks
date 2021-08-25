@@ -1,8 +1,5 @@
 package easy;
 
-import java.util.Arrays;
-import java.util.stream.IntStream;
-
 public class RomanToInteger {
     /**
      * For example, 2 is written as II in Roman numeral, just two one's added together.
@@ -28,9 +25,12 @@ public class RomanToInteger {
                 case ('D'): curr = 500; break;
                 case ('M'): curr = 1000; break;
             }
-
-            if (curr > prev) result += curr - (prev * 2);
-            else result += curr;
+            if (curr > prev) {
+                result += curr - (prev * 2);
+            }
+            else {
+                result += curr;
+            }
             prev = curr;
         }
         return result;
